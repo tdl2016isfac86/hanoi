@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+  <title>Tours de Hanoi</title>
+  <style type="text/css">
+    #a, #b, #c {
+      border: 3px solid #000;
+      width: 220px;
+      height: 220px;
+      margin: 10px;
+      float: left;
+     }
+   #d6, #d5, #d4, #d3, #d2, #d1 {
+    border: 2px solid #ff0000;
+    border-radius: 50%;
+    margin : -2%;
+    background-color: beige;
+   }
+     #d6 {
+        width: 210px;
+        height: 210px;
+     }
+     #d5 {
+        width: 190px;
+        height: 190px;
+     }
+     #d4 {
+        width: 170px;
+        height: 170px;
+     }
+     #d3 {
+        width: 150px;
+        height: 150px;
+     }
+     #d2 {
+        width: 130px;
+        height: 130px;
+     }
+     #d1 {
+        width: 110px;
+        height: 110px;
+     }
+  </style>
+  </head>
+  <body>
+	<div id="a" class="base">
+    <div id="d6">
+      <div id="d5">
+        <div id="d4">
+        	<div id="d3">
+            	<div id="d2">
+                	<div id="d1">
+						    </div>  
+    					</div>
+    				</div>  
+    			</div>  
+    		</div>  
+    	</div>  
+    </div>
+	<div id="b" class="base"></div>  
+	<div id="c" class="base"></div>
+	<div id="counter">Number of moves : <span id="count">0</span></div>
+    <!--Scripts-->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/hanoi.js"></script>
+  </body>
+</html>
